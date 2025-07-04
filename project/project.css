@@ -1,0 +1,270 @@
+body {
+    font-family: '2  Traffic' , 'Tahoma', 'Segoe UI', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    color: #333;
+    line-height: 1.6;
+    direction: rtl;
+    text-align: right;
+}
+
+/* Top Navigation Panel */
+.topPannel {
+    background-image: url('background-2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 15px 30px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    position: fixed;
+    top: 0;
+    right: 0; /* Changed from left to right for RTL */
+    width: 100%;
+    height: 60px;
+    z-index: 1000;
+    border-radius: 30px 0 0 0; /* Changed for RTL */
+    backdrop-filter: blur(10px);
+}
+
+.topPannel a {
+    color: #555;
+    text-decoration: none;
+    margin: 0 25px;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 15px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.topPannel a:first-child {
+    margin-right: 0; /* Changed from margin-left for RTL */
+}
+
+.topPannel a:hover {
+    color: #222;
+    background-color: rgba(0, 0, 0, 0.05);
+    transform: translateY(-2px);
+}
+
+.topPannel .nameOfThePage {
+    color: #0a8843;
+    position: relative;
+}
+
+.topPannel .nameOfThePage::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 15%; /* Changed from left for RTL */
+    width: 70%;
+    height: 3px;
+    background-color: #0a8843;
+    border-radius: 2px;
+}
+
+/* Main Content */
+.content {
+    margin-top: 100px;
+    padding: 30px 60px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(255, 255, 255, 0.92);
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 40px 0;
+    margin-bottom: 40px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.hero h1 {
+    font-size: 42px;
+    color: #0a8843;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.subtitle {
+    font-size: 20px;
+    color: #666;
+    margin-top: 0;
+}
+
+/* Features Section */
+.features {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 40px 0;
+}
+
+.feature-box {
+    flex-basis: 30%;
+    background-color: rgba(10, 136, 67, 0.05);
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.feature-box h2 {
+    color: #0a8843;
+    font-size: 22px;
+    margin-top: 0;
+    border-bottom: 2px solid rgba(10, 136, 67, 0.2);
+    padding-bottom: 10px;
+}
+
+/* Project Info */
+.project-info {
+    margin: 50px 0;
+}
+
+.project-info h2 {
+    color: #333;
+    font-size: 28px;
+    border-right: 5px solid #0a8843; /* Changed from border-left for RTL */
+    padding-right: 15px; /* Changed from padding-left for RTL */
+}
+
+.project-info h3 {
+    color: #0a8843;
+    margin-top: 30px;
+}
+
+.project-info ul {
+    padding-right: 20px; /* Changed from padding-left for RTL */
+}
+
+.project-info li {
+    margin-bottom: 10px;
+}
+
+/* About Page Styles */
+.about-section {
+    padding: 20px 0;
+}
+
+.about-section h1 {
+    color: #0a8843;
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 36px;
+}
+
+.team-info {
+    margin-bottom: 50px;
+}
+
+.team-info h2 {
+    color: #333;
+    font-size: 28px;
+    border-right: 5px solid #0a8843; /* Changed from border-left for RTL */
+    padding-right: 15px; /* Changed from padding-left for RTL */
+    margin-top: 40px;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    margin: 30px 0;
+}
+
+.feature-item {
+    background-color: rgba(10, 136, 67, 0.05);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.feature-item h3 {
+    color: #0a8843;
+    margin-top: 0;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(10, 136, 67, 0.1);
+    color: #666;
+    margin-top: 50px;
+    border-radius: 15px 15px 0 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .topPannel {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+        position: relative;
+    }
+    
+    .topPannel a {
+        margin: 5px 0;
+    }
+    
+    .content {
+        margin-top: 20px;
+        padding: 20px;
+    }
+    
+    .features {
+        flex-direction: column;
+    }
+    
+    .feature-box {
+        flex-basis: 100%;
+    }
+    
+    .hero h1 {
+        font-size: 28px; /* Slightly smaller for Persian text */
+    }
+    
+    .subtitle {
+        font-size: 16px; /* Slightly smaller for Persian text */
+    }
+}
+
+/* Animation effects */
+@font-face {
+    font-family: 'IRANSans';
+    src: url('https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/dist/vazirmatn-regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body, h1, h2, h3, p, a {
+    font-family: '2  Traffic','IRANSans', Tahoma, sans-serif;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.feature-box, .feature-item {
+    animation: fadeIn 0.6s ease-out forwards;
+}
